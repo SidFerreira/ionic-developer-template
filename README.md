@@ -18,8 +18,8 @@ Any change should be made in `SCSS` and `WWW-DEV` folders. After that the Ionic'
 
 **Included Gulp Tasks:**
 
-   gulp minify
-   gulp lint
+    gulp minify
+    gulp lint
 
 
 ========================
