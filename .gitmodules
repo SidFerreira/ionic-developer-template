@@ -1,0 +1,3 @@
+[submodule "lib/ionic"]
+	path = lib/ionic
+	url = git@github.com:driftyco/ionic.git
