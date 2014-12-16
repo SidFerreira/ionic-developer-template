@@ -71,13 +71,9 @@ gulp.task('minify', function(done) {
         .pipe(addsrc.prepend(['./www-dev/js/**/*.js']))
         .pipe(concat('b.js'))
 		.pipe(ngAnnotate())
-//        .pipe(uglify())
-        .pipe(gulp.dest('./www/js/'));
-
-	gulp.src('./www/js/b.js')
-        .pipe(jshint())
-        .pipe(jshint.reporter('default'))
-		.on('end', done);
+        .pipe(uglify())
+        .pipe(gulp.dest('./www/js/'))
+	    .on('end', done);;
 });
 
 gulp.task('watch', function() {
